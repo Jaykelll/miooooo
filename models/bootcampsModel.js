@@ -10,12 +10,12 @@ const bootcampSchema = new mongoose.Schema({
     phone : {
         type : Number,
         required : [true,"telefono requerido"],
-        maxlength : [10 , "telefono muy largo"]
+        max : [9999999999 , "telefono muy largo"]
     },
     address : {
         type : String,
         required : [true, "dirección requerida"],
-        maxlength : [50, "dirección muy larga"],
+        maxlength : [20, "dirección muy larga"],
         minlength : [10, "dirección muy corta"]
     },
     topics : {
